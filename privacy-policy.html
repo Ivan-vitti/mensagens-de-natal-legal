@@ -39,18 +39,20 @@
 <div class="wrap">
 <header>
   <h1>Política de Privacidade — Mensagens de Natal e Cartões</h1>
-  <p class="atualizado">Última atualização: 29 de outubro de 2026</p>
+  <p class="atualizado">Última atualização: 23 de novembro de 2026</p>
 </header>
 
 <h2>1. Quem somos</h2>
 <p>O aplicativo <strong>Mensagens de Natal e Cartões</strong> (identificador
 <code>br.com.vitti.mensagensdenatal</code>, distribuído pela Google Play Store) é desenvolvido e
 mantido por <strong>69.098.912 IVAN VITTI</strong>, CNPJ 69.098.912/0001-44 (Vitti Apps). Este
-documento explica quais dados o app acessa, armazena e compartilha, e como você controla isso.</p>
-<p>O app não exige cadastro, login, nome, e-mail, telefone ou localização para funcionar. Não há
-servidor próprio e nós não recebemos nenhum dado seu diretamente. As mensagens, o editor de cartões,
-o sorteio de amigo secreto, o Calendário do Advento, o organizador da ceia e o gerador de mensagens
-funcionam inteiramente no seu aparelho.</p>
+documento explica quais dados o app acessa, armazena e compartilha, e como você controla isso.
+Ele vale também para a versão web do app, em
+<a href="https://ivan-vitti.github.io/feliz-natal/">ivan-vitti.github.io/feliz-natal</a>.</p>
+<p>O app não exige cadastro, login, nome, e-mail, telefone ou localização para funcionar. As
+mensagens, o editor de cartões, o sorteio de amigo secreto, o Calendário do Advento, o organizador
+da ceia e o gerador de mensagens funcionam inteiramente no seu aparelho. A única exceção é o
+<strong>sorteio de amigo secreto por e-mail</strong>, que é opcional e está explicado na seção 5.</p>
 
 <h2>2. Resumo rápido</h2>
 <ul>
@@ -60,18 +62,25 @@ funcionam inteiramente no seu aparelho.</p>
     preferências do app.</li>
   <li><strong>Fotos e câmera:</strong> só são acessadas quando você escolhe ou tira uma foto para o
     cartão. Ela é usada no aparelho e nunca é enviada para nós.</li>
-  <li><strong>Anúncios:</strong> o app exibe anúncios do Google AdMob, que pode coletar dados do
-    aparelho (como o ID de publicidade) conforme a política do Google.</li>
+  <li><strong>Microfone:</strong> só é usado quando você grava um recado no cartão com áudio. A
+    gravação fica no aparelho e só sai dentro do vídeo que você mesmo compartilhar.</li>
+  <li><strong>Amigo secreto por e-mail (opcional):</strong> se você escolher essa opção, os nomes,
+    e-mails e listas de desejos dos participantes são enviados ao nosso serviço de sorteio, que manda
+    o resultado para cada pessoa por e-mail (seção 5).</li>
+  <li><strong>Anúncios:</strong> o app Android exibe anúncios do Google AdMob, que pode coletar
+    dados do aparelho (como o ID de publicidade) conforme a política do Google. A versão web não
+    exibe anúncios.</li>
 </ul>
 
 <h2>3. Dados armazenados no seu aparelho</h2>
 <div class="tabela-scroll"><table>
   <tr><th>Dado</th><th>Para quê</th><th>Sai do aparelho?</th></tr>
   <tr><td>Mensagens favoritas</td><td>Mostrar a aba Favoritos</td><td>Não</td></tr>
-  <tr><td>Sorteios de amigo secreto (nome do evento, nomes dos participantes, listas de desejos,
-      restrições e resultado)</td>
+  <tr><td>Sorteios de amigo secreto (nome do evento, nomes e e-mails dos participantes, listas de
+      desejos, restrições e, no modo "passar o celular", o resultado)</td>
       <td>Guardar e revelar o sorteio</td>
-      <td>Só se <strong>você</strong> compartilhar um resultado (por exemplo, pelo WhatsApp)</td></tr>
+      <td>Só se <strong>você</strong> compartilhar um resultado (por exemplo, pelo WhatsApp) ou
+      escolher o sorteio por e-mail (seção 5)</td></tr>
   <tr><td>Lista da ceia (itens e quem leva)</td><td>Organizar a ceia</td>
       <td>Só se <strong>você</strong> compartilhar a lista</td></tr>
   <tr><td>Janelas abertas do Advento, horário do lembrete e itens premium liberados</td>
@@ -79,8 +88,13 @@ funcionam inteiramente no seu aparelho.</p>
   <tr><td>Contadores internos (por exemplo, quantos cartões foram compartilhados)</td>
       <td>Controlar a frequência dos anúncios e o pedido de avaliação</td><td>Não</td></tr>
 </table></div>
-<p>Esses dados ficam no armazenamento interno do app e são apagados se você limpar os dados do
-app ou desinstalá-lo.</p>
+<p>Esses dados ficam no armazenamento interno do app (na versão web, no armazenamento do
+navegador) e são apagados se você limpar os dados do app ou do navegador, ou desinstalar o app.</p>
+
+<h3>Microfone (cartão com áudio)</h3>
+<p>Quando você toca em gravar na ferramenta "Voz" do editor, o app pede permissão para usar o
+microfone e grava um recado de até 30 segundos. A gravação fica no aparelho e entra no vídeo do
+cartão. Ela só sai do aparelho quando você compartilha esse vídeo, e nunca é enviada para nós.</p>
 
 <h3>Fotos, câmera e galeria</h3>
 <p>Quando você toca em "Galeria" ou "Câmera" no editor, o Android abre o seletor de fotos ou a
@@ -114,32 +128,64 @@ anúncios, o SDK do Google pode coletar e processar dados como:</p>
 anúncios. Você pode mudar sua escolha a qualquer momento em <em>Ajustes → Opções de privacidade</em>,
 dentro do app.</p>
 
-<h2>5. O que o app NÃO coleta</h2>
+<h2>5. Amigo secreto por e-mail (opcional)</h2>
+<p>Se você tocar em <strong>"Sortear e enviar por e-mail"</strong>, o app envia para o nosso serviço
+de sorteio, que funciona no Google Apps Script e usa a conta de e-mail
+<em>sorteiofeliznatal@gmail.com</em>:</p>
 <ul>
-  <li>Nome, e-mail, telefone ou contatos.</li>
+  <li>os nomes e e-mails dos participantes e as listas de desejos;</li>
+  <li>os dados do evento que você preencheu (nome, data, local e valor sugerido);</li>
+  <li>as restrições do sorteio (quem não pode tirar quem).</li>
+</ul>
+<p>O serviço faz o sorteio e manda a cada participante, pelo Gmail, um e-mail com o próprio
+resultado. Esses dados são usados <strong>apenas para entregar o sorteio</strong>. Para que ninguém
+descubra quem tirou quem, nem quem organizou nem nós:</p>
+<ul>
+  <li>o app não recebe nem guarda o resultado, e não o mostra a quem organiza;</li>
+  <li>os e-mails enviados são <strong>excluídos definitivamente</strong> da conta do serviço logo
+    após o envio;</li>
+  <li>para permitir o botão "Reenviar", o serviço guarda o resultado de cada pessoa
+    <strong>cifrado</strong>, com uma chave que fica só no aparelho de quem organizou e nunca é
+    enviada ao serviço para ser guardada. Sem essa chave, nem nós conseguimos ler o resultado. Esses
+    registros cifrados são apagados automaticamente em até 40 dias, ou antes, quando o espaço é
+    necessário para novos sorteios;</li>
+  <li>o serviço guarda apenas contadores de uso do dia (quantos sorteios e e-mails), sem dados
+    pessoais, para limitar abusos.</li>
+</ul>
+<p>Os e-mails dos participantes também ficam salvos no aparelho de quem organizou, junto com o
+evento, até que você apague o sorteio. Se você não usar essa opção, nenhum e-mail é coletado nem
+enviado. O envio dos e-mails pelo Gmail segue a
+<a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</p>
+
+<h2>6. O que o app NÃO coleta</h2>
+<ul>
+  <li>Nome, e-mail, telefone ou contatos (exceto os dados que você mesmo informa no sorteio por
+    e-mail, usados só para entregar o resultado, como explicado na seção 5).</li>
   <li>Localização precisa (GPS).</li>
-  <li>Suas fotos ou cartões (eles ficam no aparelho até você compartilhar).</li>
-  <li>Os nomes do amigo secreto (eles ficam no aparelho).</li>
-  <li>Não há login, conta, servidor próprio nem análise de uso de terceiros além do AdMob.</li>
+  <li>Suas fotos, gravações de voz ou cartões (eles ficam no aparelho até você compartilhar).</li>
+  <li>Os nomes do amigo secreto no modo "passar o celular" (eles ficam no aparelho).</li>
+  <li>Não há login, conta nem análise de uso de terceiros além do AdMob no app Android.</li>
 </ul>
 
-<h2>6. Como você controla seus dados</h2>
+<h2>7. Como você controla seus dados</h2>
 <ul>
   <li>Apague favoritos e sorteios dentro do próprio app.</li>
+  <li>Para pedir a exclusão de um sorteio por e-mail antes do prazo, escreva para o contato da
+    seção 10.</li>
   <li>Limpe tudo em <em>Configurações do Android → Apps → Mensagens de Natal → Armazenamento →
     Limpar dados</em>, ou desinstale o app.</li>
   <li>Gerencie anúncios pelo ID de publicidade (seção 4).</li>
 </ul>
 
-<h2>7. Crianças</h2>
+<h2>8. Crianças</h2>
 <p>O app é destinado a pessoas a partir de 13 anos e não é direcionado a crianças menores de 13
 anos. Não coletamos intencionalmente dados de crianças.</p>
 
-<h2>8. Alterações nesta política</h2>
+<h2>9. Alterações nesta política</h2>
 <p>Se esta política mudar, a nova versão será publicada neste mesmo endereço com a data de
 atualização no topo.</p>
 
-<h2>9. Contato</h2>
+<h2>10. Contato</h2>
 <p>Dúvidas sobre privacidade: <a href="mailto:ivan.vitti0@gmail.com">ivan.vitti0@gmail.com</a></p>
 
 <footer>Mensagens de Natal e Cartões · Vitti Apps · 69.098.912 IVAN VITTI · CNPJ 69.098.912/0001-44</footer>
